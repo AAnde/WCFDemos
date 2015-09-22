@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleWCFService", "SampleWCFService\SampleWCFService.csproj", "{3B464D17-A0D0-4F46-B38B-3898B69446DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosting", "Hosting", "{89CB25D1-7A13-434D-93F6-B14DE1998B80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleHost", "ConsoleHost\ConsoleHost.csproj", "{BC08678D-DE32-4CBC-A6FF-0CB6D9BFCAC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B464D17-A0D0-4F46-B38B-3898B69446DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B464D17-A0D0-4F46-B38B-3898B69446DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B464D17-A0D0-4F46-B38B-3898B69446DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B464D17-A0D0-4F46-B38B-3898B69446DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC08678D-DE32-4CBC-A6FF-0CB6D9BFCAC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC08678D-DE32-4CBC-A6FF-0CB6D9BFCAC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC08678D-DE32-4CBC-A6FF-0CB6D9BFCAC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC08678D-DE32-4CBC-A6FF-0CB6D9BFCAC6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BC08678D-DE32-4CBC-A6FF-0CB6D9BFCAC6} = {89CB25D1-7A13-434D-93F6-B14DE1998B80}
+	EndGlobalSection
+EndGlobal
