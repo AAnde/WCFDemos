@@ -12,40 +12,40 @@ namespace ConsoleConsumer.ServiceReference1 {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.ISampleServiceChanged")]
-    public interface ISampleServiceChanged {
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.ISampleService")]
+    public interface ISampleService {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISampleServiceChanged/GetMessage", ReplyAction="http://tempuri.org/ISampleServiceChanged/GetMessageResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISampleService/GetMessage", ReplyAction="http://tempuri.org/ISampleService/GetMessageResponse")]
         string GetMessage(string message);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISampleServiceChanged/GetMessage", ReplyAction="http://tempuri.org/ISampleServiceChanged/GetMessageResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISampleService/GetMessage", ReplyAction="http://tempuri.org/ISampleService/GetMessageResponse")]
         System.Threading.Tasks.Task<string> GetMessageAsync(string message);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface ISampleServiceChangedChannel : ConsoleConsumer.ServiceReference1.ISampleServiceChanged, System.ServiceModel.IClientChannel {
+    public interface ISampleServiceChannel : ConsoleConsumer.ServiceReference1.ISampleService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class SampleServiceChangedClient : System.ServiceModel.ClientBase<ConsoleConsumer.ServiceReference1.ISampleServiceChanged>, ConsoleConsumer.ServiceReference1.ISampleServiceChanged {
+    public partial class SampleServiceClient : System.ServiceModel.ClientBase<ConsoleConsumer.ServiceReference1.ISampleService>, ConsoleConsumer.ServiceReference1.ISampleService {
         
-        public SampleServiceChangedClient() {
+        public SampleServiceClient() {
         }
         
-        public SampleServiceChangedClient(string endpointConfigurationName) : 
+        public SampleServiceClient(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public SampleServiceChangedClient(string endpointConfigurationName, string remoteAddress) : 
+        public SampleServiceClient(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public SampleServiceChangedClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public SampleServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public SampleServiceChangedClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public SampleServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
         }
         
