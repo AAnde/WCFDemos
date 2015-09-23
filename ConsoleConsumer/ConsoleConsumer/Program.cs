@@ -11,9 +11,9 @@ namespace ConsoleConsumer
         static void Main(string[] args)
         {
             ServiceReference1.SampleServiceClient httpobj = new ServiceReference1.SampleServiceClient("BasicHttpBinding_ISampleService");
-            ServiceReference1.SampleServiceClient nettcpobj = new ServiceReference1.SampleServiceClient("NetTcpBinding_ISampleService");
+            ServiceReference1.PublicServiceClient nettcpobj = new ServiceReference1.PublicServiceClient("NetTcpBinding_IPublicService");
             Console.WriteLine(httpobj.GetMessage("Ashok"));
-            Console.WriteLine(nettcpobj.GetMessage("Bhaskar"));
+            Console.WriteLine(nettcpobj.GetMessage1());
             Console.ReadLine();
         }
     }

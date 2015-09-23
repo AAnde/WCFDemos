@@ -15,5 +15,10 @@ namespace SampleWCFService
         [OperationContract]
         string GetMessage(string message);
     }
-
+    [ServiceContract]
+    public interface IPublicService
+    {
+        [OperationContract]
+        string GetMessage1();
+    }
 }
