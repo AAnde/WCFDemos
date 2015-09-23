@@ -10,8 +10,10 @@ namespace ConsoleConsumer
     {
         static void Main(string[] args)
         {
-            ServiceReference1.SampleServiceClient obj = new ServiceReference1.SampleServiceClient();
-            Console.WriteLine(obj.GetMessage("Ashok"));
+            ServiceReference1.SampleServiceClient httpobj = new ServiceReference1.SampleServiceClient("BasicHttpBinding_ISampleService");
+            ServiceReference1.SampleServiceClient nettcpobj = new ServiceReference1.SampleServiceClient("NetTcpBinding_ISampleService");
+            Console.WriteLine(httpobj.GetMessage("Ashok"));
+            Console.WriteLine(nettcpobj.GetMessage("Bhaskar"));
             Console.ReadLine();
         }
     }
